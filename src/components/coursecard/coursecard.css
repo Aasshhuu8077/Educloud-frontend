@@ -1,0 +1,110 @@
+/* Course Card Container */
+.course-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Elevated shadow for better look */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 280px;
+    transition: 0.3s ease-in-out; /* Smooth transition on hover */
+    margin: 15px; /* Space between cards */
+    cursor: pointer; /* Cursor pointer on hover to indicate interactivity */
+    overflow: hidden; /* Prevents overflow of content */
+    position: relative; /* For positioning */
+  }
+  
+  /* Hover Effect */
+  .course-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  /* Image styling */
+  .course-image {
+    width: 100%;
+    height: 180px; /* Increase the height for better visual balance */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out; /* Transition effect for hover */
+  }
+  
+  .course-card:hover .course-image {
+    transform: scale(1.05); /* Slight zoom effect on image */
+  }
+  
+  /* Course Title Styling */
+  h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600; /* Bold for better emphasis */
+    margin-bottom: 10px;
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+  }
+  
+  /* Instructor & Duration Styling */
+  p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  
+  /* Price Badge */
+  .price {
+    background-color: #ff5c5c; /* Bright red color for the price */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Button Styling */
+  .common-btn {
+    background-color: #ff5c5c; /* Red color for the button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .common-btn:hover {
+    background-color: #e54e4e; /* Darker red when hovered */
+  }
+  
+  /* Styling the Course List (Flexbox container for row alignment) */
+  .course-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of course cards to the next line */
+    justify-content: space-between; /* Space between items */
+    gap: 20px; /* Adds space between each row */
+    margin: 0 auto; /* Centers the cards container */
+    padding: 20px; /* Padding around the entire container */
+  }
+  
+  /* Responsive Design for Larger Screens */
+  @media (min-width: 768px) {
+    .course-card {
+      width: 320px; /* Increase the width of each card on larger screens */
+    }
+  }
+  
+  /* Styling for Extra Large Screens */
+  @media (min-width: 1200px) {
+    .course-list {
+      justify-content: space-around; /* More even space between cards on large screens */
+    }
+  
+    .course-card {
+      width: 350px; /* Even larger cards on big screens */
+    }
+  }
+  

@@ -1,0 +1,134 @@
+.course-description {
+    padding: 80px 40px;
+    text-align: center;
+    min-height: 60vh;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-description:hover {
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.course-image {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.course-image:hover {
+    transform: scale(1.08);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.2);
+}
+
+.course-info {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.course-info:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.15);
+}
+
+.course-info h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.course-info p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: center;
+}
+
+.course-info .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #6200ea;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.course-info .btn:hover {
+    background: #3700b3;
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 2;
+    padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+    .course-description {
+        padding: 60px 20px;
+    }
+
+    .course-header {
+        flex-direction: column;
+    }
+
+    .course-image {
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .course-info {
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .course-info h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

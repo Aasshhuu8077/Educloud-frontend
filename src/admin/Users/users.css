@@ -1,0 +1,16 @@
+.users {
+    width: 100%; /* Makes the div fill the full width */
+    max-width: 1200px; /* Optionally set a max-width to prevent it from stretching too wide */
+    margin: 20px auto; /* Centers it horizontally with some space above and below */
+    min-height: 80vh; /* Keeps the minimum height at 80% of the viewport height */
+    border: solid gray 1px; /* Border style */
+    padding: 20px; /* Adds padding inside the div for some space */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    overflow-x: auto; /* Allows horizontal scrolling if the content is too wide */
+}
+
+@media (max-width: 768px) {
+    .users {
+        padding: 10px; /* Adjusts padding for smaller screens */
+    }
+}
