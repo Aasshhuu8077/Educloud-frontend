@@ -4,7 +4,7 @@ import App from './App.jsx'
 import { UserContextProvider } from './context/UserContext.jsx'
 import { CourseContextProvider } from './context/CourseContext.jsx'
 
-export const server = 'http://localhost:8120'
+export const server = 'https://educloud-backend-r32q.onrender.com'
 
 
 createRoot(document.getElementById('root')).render(
