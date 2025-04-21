@@ -21,10 +21,11 @@ export const UserContextProvider = ({children})=>{
         console.log(data)
       toast.success(data.message)
       localStorage.setItem("token",data.token)
-       await fetchUser();
+       
       setUser(data.user);
       setIsAuth(true);
       setBtnloading(false);
+      fetchUser();
       navigate("/");
       fetchMyCourse();
         }
