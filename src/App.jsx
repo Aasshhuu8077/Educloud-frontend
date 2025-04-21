@@ -1,6 +1,7 @@
 import React from 'react'
-import Home from './pages/home/Home'
 import { BrowserRouter, Route,Routes, Link } from 'react-router-dom'
+import Home from './pages/home/Home'
+
 import './App.css'
 import Header from './components/header/Header'
 import Login from './pages/auth/Login'
