@@ -21,7 +21,16 @@ import AdminDashbord from './admin/Dashboard/AdminDashboard'
 import AdminCourses from './admin/Courses/AdminCourses'
 import AdminUsers from './admin/Users/AdminUser'
 
+
 const App = () => {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
+  );
+};
+
+const AppContent = () => {
  
   const {isAuth,user,loading} = UserData();
   return (
