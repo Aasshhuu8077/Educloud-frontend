@@ -15,7 +15,7 @@ const AdminUsers = ({ user }) => {
 
   async function fetchUsers() {
     try {
-      const { data } = await axios.get("http://localhost:8120/api/users", {
+      const { data } = await axios.get(`${server}/api/users`, {
         headers: {
           token: localStorage.getItem("token"),
         },
